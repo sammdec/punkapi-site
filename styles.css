@@ -1,0 +1,70 @@
+@import "tachyons";
+
+.ws-prewrap {
+  white-space: pre-wrap;
+}
+
+.banner {
+  background-color: #00AFDB;
+}
+
+.bottle {
+  top: -40px;
+	width: 40px;
+	transform-style: preserve-3d;
+  animation: spin 5s infinite linear;
+}
+
+.bottle-face {
+  position: absolute;
+  width: 40px;
+}
+
+.bottle-face:nth-child(1) {
+  transform: translateZ(-20px) rotateY(180deg);
+}
+
+.bottle-face:nth-child(2) {
+  transform: rotateY(-270deg) translateX(20px);
+	transform-origin: top right;
+}
+
+.bottle-face:nth-child(3) {
+	transform: rotateY(270deg) translateX(-20px);
+	transform-origin: center left;
+}
+
+.bottle-face:nth-child(4) {
+  transform: translateZ(20px);
+}
+
+.logo__label {
+    animation: color-change 14s infinite forwards;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #6CB150;
+  }
+
+  25% {
+    fill: #00B0E0;
+  }
+
+  50% {
+    fill: #FFC04C;
+  }
+
+  75% {
+    fill: #EC5739;
+  }
+
+  100% {
+    fill: #6CB150;
+  }
+}
+
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}

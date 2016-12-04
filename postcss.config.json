@@ -1,0 +1,8 @@
+{
+  "input": "styles.css",
+  "output": "build/styles.min.css",
+  "use": ["postcss-import", "autoprefixer", "cssnano"],
+  "autoprefixer": {
+    "browsers": "> 5%"
+  }
+}
