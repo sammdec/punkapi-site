@@ -6,8 +6,9 @@
   "scripts": {
     "build": "postcss --config postcss.config.json",
     "dev": "npm-run-all --parallel 'build -- -w' 'start -- --cache 0'",
-    "deploy": "npm run build & now ./build",
-    "start": "list ./build"
+    "start": "list ./build",
+    "deploy": "npm run build & now ./build -n punkapi-site",
+    "alias": "now alias"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,8 @@
   },
   "dependencies": {
     "list": "^0.8.2"
+  },
+  "now": {
+    "alias": "punkapi.com"
   }
 }
