@@ -4,12 +4,13 @@ const nunjucks = require('nunjucks')
 
 const app = express()
 const apiV1Proxy = httpProxy.createProxyServer()
+const isDev = process.env.NODE_ENV !== 'production'
 
 app.use(express.static('public'))
 
 nunjucks.configure('views', {
   autoescape: true,
-  cache: true,
+  watch: isDev,
   express: app
 })
 
