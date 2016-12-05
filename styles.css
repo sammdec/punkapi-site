@@ -4,6 +4,10 @@
   white-space: pre-wrap;
 }
 
+.ww-break {
+  word-wrap: break-word;
+}
+
 .banner {
   background-color: #00AFDB;
 }
@@ -67,4 +71,10 @@
 @keyframes spin {
 	from { transform: rotateY(0); }
 	to { transform: rotateY(360deg); }
+}
+
+@media screen and (min-width:30em) {
+  .ww-normal-ns {
+    word-wrap: noraml;
+  }
 }

@@ -6,4 +6,4 @@ A very simple set of pages for `punkapi.com`, really nothing special going on he
 Probably not very useful for anyone else!
 
 - Run `$ npm run deploy`
-- Run `$ npm run alias` to realias the deploy to `punkapi.com`
+- Run `$ npm run alias` to realias the deploy to `site.punkapi.com`
