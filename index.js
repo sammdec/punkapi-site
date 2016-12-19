@@ -19,7 +19,7 @@ app.get('/documentation/v1', (req, res) => res.render('docsV1.html'))
 app.get('/documentation/v2', (req, res) => res.render('docsV2.html'))
 
 app.get('/api/v1/*', (req, res) => {
-  apiV1Proxy.web(req, res, { target: 'https://punkapi.com', secure: false })
+  apiV1Proxy.web(req, res, { target: 'https://178.62.59.174', secure: false })
 })
 
 const getPort = process.env.PORT || 3333
