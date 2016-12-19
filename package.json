@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss --config postcss.config.json",
-    "dev": "npm-run-all --parallel 'build -- -w' 'start -- --cache 0'",
-    "start": "list ./build",
-    "deploy": "npm run build & now ./build -n punkapi-site",
+    "dev": "npm-run-all --parallel 'build -- -w' 'dev-start'",
+    "dev-start": "nodemon index.js",
+    "start": "node index.js",
+    "deploy": "npm run build & now -n punkapi-site",
     "alias": "now alias"
   },
   "repository": {
@@ -23,12 +24,15 @@
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "cssnano": "^3.8.1",
+    "nodemon": "^1.11.0",
     "postcss-cli": "^2.6.0",
     "postcss-import": "^8.2.0",
     "tachyons": "^4.5.6"
   },
   "dependencies": {
-    "list": "^0.8.2"
+    "express": "^4.14.0",
+    "http-proxy": "^1.16.1",
+    "nunjucks": "^3.0.0"
   },
   "now": {
     "alias": "punkapi.com"
