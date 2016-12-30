@@ -81,7 +81,7 @@
 
   <section class="center f5 measure-wide lh-copy mb4 ph0-ns ph3 pb4 bb b--light-silver">
     <h2 class="code f3 mv2">Root Endpoint</h2>
-    <p class="mt0">The root endpoint should prefix all resources and is only accessible over HTTPS.</p>
+    <p class="mt0">The root endpoint should prefix all resources and is only accessible over HTTPS. CORS is also enabled.</p>
     <code class="code f6 db pa2 bg-black-70 white br2 ww-break ww-normal-ns">
       https://api.punkapi.com/v2/
     </code>
@@ -96,6 +96,11 @@
     <h2 class="code f3 mb2 mt0">Rate Limits</h2>
     <p class="mt0">To make sure everyone can access the API reliably, each IP that makes a request has a rate limit of 3600 requests per hour.</p>
     <p>This works out at <strong>1 req/sec</strong>. This is an initial figure, if the servers hold up I will definitely consider bumping this number.</p>
+    <p>You can see what the rate limit is and how many requests are remaining by looking at the rate limit headers sent in the response.</p>
+    <code class="code f6 pa2 db bg-black-70 white br2 ww-break ww-normal-ns">
+      x-ratelimit-limit: 3600
+      x-ratelimit-remaining: 3587
+    </code>
   </section>
 
   <section class="mw7 center f5 measure-wide lh-copy mb4 ph0-ns ph3 pb4 bb b--light-silver">

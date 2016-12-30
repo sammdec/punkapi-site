@@ -26,5 +26,5 @@ const getPort = process.env.PORT || 3333
 
 const server = app.listen(getPort, function (error) {
   if (error) throw error
-  console.info(`Listening on localhost:${server.address().port}`)
+  console.info(`Listening on http://localhost:${server.address().port}`)
 })
