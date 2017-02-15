@@ -13,7 +13,6 @@ nunjucks.configure('views', {
 })
 
 app.get('/', (req, res) => res.render('index.html'))
-app.get('/documentation/v1', (req, res) => res.render('docsV1.html'))
 app.get('/documentation/v2', (req, res) => res.render('docsV2.html'))
 
 const getPort = process.env.PORT || 3333
