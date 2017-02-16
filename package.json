@@ -32,8 +32,5 @@
   "dependencies": {
     "express": "^4.14.0",
     "nunjucks": "^3.0.0"
-  },
-  "now": {
-    "alias": "punkapi.com"
   }
 }
