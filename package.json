@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "express": "^4.14.0",
-    "http-proxy": "^1.16.1",
     "nunjucks": "^3.0.0"
   },
   "now": {
