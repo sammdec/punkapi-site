@@ -1,3 +1,5 @@
 {
-  "alias": "punkapi.com"
+  "name": "punkapi-site",
+  "alias": "punkapi.com",
+  "files": ["index.html", "public", "documentation"]
 }

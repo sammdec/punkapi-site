@@ -1,6 +1,6 @@
 {
   "input": "styles.css",
-  "output": "public/styles.min.css",
+  "output": "site/styles.min.css",
   "use": ["postcss-import", "autoprefixer", "cssnano"],
   "autoprefixer": {
     "browsers": "> 5%"
