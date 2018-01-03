@@ -6,8 +6,8 @@
   "scripts": {
     "build": "postcss --config postcss.config.json",
     "dev": "npm run build -w",
-    "deploy": "npm run build && cd site && now -n punkapi-site",
-    "alias": "now alias"
+    "deploy": "up",
+    "deploy:prod": "up deploy production"
   },
   "repository": {
     "type": "git",

@@ -100,8 +100,8 @@
 
   <section class="donations mw7 center f5 measure-wide lh-copy mb2 ph0-ns ph3">
     <h2 class="code f3">Donations</h2>
-    <p>If you would like to contribute to keeping the lights on and the maintenance of <strong class="b">Punk API</strong>, I'm accepting donations through
-    these channels</p>
+    <p>If you would like to contribute to keeping the lights on and the maintenance of
+      <strong class="b">Punk API</strong>, I'm accepting donations through these channels</p>
     <div class="coins flex justify-center">
       <p class="flex items-center mr4 btc-link pointer">
         <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
@@ -172,23 +172,23 @@
   </footer>
 
   <script>
-    function toggleClass (elClass) {
+    function toggleClass(elClass) {
       var el = document.querySelector(elClass);
       var allEls = document.querySelectorAll('.address');
-      
-      allEls.forEach(function (el) {el.classList.add('dn');})
+
+      allEls.forEach(function (el) { el.classList.add('dn'); })
       el.classList.remove('dn');
     };
 
-    document.querySelector('.btc-link').onclick = function() {
+    document.querySelector('.btc-link').onclick = function () {
       toggleClass('.btc-address')
     }
 
-    document.querySelector('.eth-link').onclick = function() {
+    document.querySelector('.eth-link').onclick = function () {
       toggleClass('.eth-address')
-    } 
+    }
 
-    document.querySelector('.ltc-link').onclick = function() {
+    document.querySelector('.ltc-link').onclick = function () {
       toggleClass('.ltc-address')
     } 
   </script>

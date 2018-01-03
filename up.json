@@ -1,0 +1,16 @@
+{
+  "name": "punkapi-site",
+  "profile": "up_admin",
+  "type": "static",
+  "static": {
+    "dir": "site"
+  },
+  "hooks": {
+    "build": "npm run build"
+  },
+  "stages": {
+    "production": {
+      "domain": "punkapi.com"
+    }
+  }
+}
