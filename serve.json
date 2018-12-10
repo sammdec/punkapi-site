@@ -1,0 +1,6 @@
+{
+  "public": "site",
+  "rewrites": [
+    { "source": "documentation/v2", "destination": "/documentation/v2.html" }
+  ]
+}

@@ -1,5 +1,13 @@
 {
+  "version": 2,
   "name": "punkapi-site",
   "alias": "punkapi.com",
-  "files": ["index.html", "public", "documentation"]
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "site" }
+    }
+  ],
+  "routes": [{ "src": "/documentation/v2", "dest": "/v2-docs.html" }]
 }
