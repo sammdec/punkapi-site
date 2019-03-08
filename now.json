@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "punkapi-site",
-  "alias": "punkapi.com",
+  "alias": ["punkapi.com", "www.punkapi.com"],
   "builds": [
     {
       "src": "package.json",
